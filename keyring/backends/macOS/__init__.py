@@ -8,10 +8,7 @@ from ...errors import KeyringLocked
 from ...errors import KeyringError
 from ...util import properties
 
-try:
-    from . import api
-except Exception:
-    pass
+from . import api
 
 
 class Keyring(KeyringBackend):
